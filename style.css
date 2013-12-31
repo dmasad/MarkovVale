@@ -1,31 +1,53 @@
 body {
-	background: #000;
+	background: #FFF;
 }
 h1 {
 	font-family: Varela Round, arial, sans-serif;
-	color: #fff;
+	color: #000;
 	font-weight: 800;
     font-style: normal;
     line-height: 1.4em;
-    font-size: 36px;
+    font-size: 3em;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
     text-align: center;
+    position: relative;
+    top:50px;
 }
 
 p {
 	font-family: Georgia, serif;
-	color: #fff;
-	font-size: 13px;
+	color: #000;
+	font-size: 1em;
+	text-align:justify;
+}
+
+#content {
+	width:66%;
+	margin:0 auto;
+	position: relative;
+	top: 70px;
+}
+
+#description {
+	font-style: italic;
 }
 
 #chain {
-	width:66%;
-	margin:0 auto;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	padding: 10 10 0 10;
+	height: 170px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
-.button {
+#chain p {
+	vertical-align: middle;
+}
+
+/*.button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #c28cbf;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #c28cbf;
 	box-shadow:inset 0px 1px 0px 0px #c28cbf;
@@ -60,19 +82,62 @@ p {
 	text-align:center;
 	text-shadow:1px 1px 0px #610d5b;
 	margin:0 auto;
-}
-.button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #94288f), color-stop(1, #610d5b) );
-	background:-moz-linear-gradient( center top, #94288f 5%, #610d5b 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#94288f', endColorstr='#610d5b');
-	background-color:#94288f;
-}.button:active {
-	position:relative;
-	top:1px;
-}
+}*/
+
 /* This button was generated using CSSButtonGenerator.com */
 
 #button_div{
 	width:100%; 
 	text-align:center;
+}
+
+.button {
+    display: inline-block;
+    width:100px;
+    height:100px;
+    background: #610d5b;
+    position: relative;
+    border-radius:100% 0;
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+    /*border:1px solid #fff;*/
+    display:inline-block;
+}
+.button_text {
+	color:#ffffff;
+	font-family:Varela Round, arial, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+	line-height:40px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #610d5b;
+	margin:0 auto;
+	-webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    position: relative;
+    left:0px;
+    top:30px;
+}
+
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #94288f), color-stop(1, #610d5b) );
+	background:-moz-linear-gradient( center top, #94288f 5%, #610d5b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#94288f', endColorstr='#610d5b');
+	background-color:#94288f;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+#disclaimer p{
+	position: relative;
+	top: 100px;
+	padding-bottom: 20px;
+	font-size:.8em;
 }
