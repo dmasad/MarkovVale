@@ -3,7 +3,7 @@ body {
 }
 h1 {
 	font-family: Varela Round, arial, sans-serif;
-	color: #000;
+	color: #610d5b;
 	font-weight: 800;
     font-style: normal;
     line-height: 1.4em;
@@ -23,6 +23,19 @@ p {
 	text-align:justify;
 }
 
+a:link {
+	color: #9e3b99;
+}
+a:visited {
+	color: #9e3b99;
+}
+a:hover {
+	color: #9e3b99;
+}
+a:active {
+	color: #9e3b99;
+}
+
 #content {
 	width:66%;
 	margin:0 auto;
@@ -38,13 +51,11 @@ p {
 	border-style: solid;
 	border-width: 2px;
 	border-color: #000;
-	padding: 10 10 0 10;
-	height: 170px;
-	box-shadow: 10px 10px 5px #888888;
-}
-
-#chain p {
-	vertical-align: middle;
+	padding: 0 10 0 10;
+	height: auto;
+	box-shadow: 5px 5px 5px #999;
+	font-size: 1em;
+	margin-top: 30px;
 }
 
 /*.button {
@@ -89,6 +100,8 @@ p {
 #button_div{
 	width:100%; 
 	text-align:center;
+	position: relative;
+	bottom: -40px;
 }
 
 .button {
@@ -96,7 +109,6 @@ p {
     width:100px;
     height:100px;
     background: #610d5b;
-    position: relative;
     border-radius:100% 0;
     -webkit-transform:rotate(45deg);
     -ms-transform:rotate(45deg);
@@ -135,9 +147,13 @@ p {
 	top:1px;
 }
 
-#disclaimer p{
+#credit {
+	padding-bottom: 20px;
+}
+
+#credit p{
 	position: relative;
 	top: 100px;
-	padding-bottom: 20px;
 	font-size:.8em;
+	line-height: .8em;
 }
