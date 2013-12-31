@@ -1,0 +1,78 @@
+body {
+	background: #000;
+}
+h1 {
+	font-family: Varela Round, arial, sans-serif;
+	color: #fff;
+	font-weight: 800;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p {
+	font-family: Georgia, serif;
+	color: #fff;
+	font-size: 13px;
+}
+
+#chain {
+	width:66%;
+	margin:0 auto;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #c28cbf;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c28cbf;
+	box-shadow:inset 0px 1px 0px 0px #c28cbf;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #610d5b), color-stop(1, #94288f) );
+	background:-moz-linear-gradient( center top, #610d5b 5%, #94288f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#610d5b', endColorstr='#94288f');
+	background-color:#610d5b;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #94288f;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Varela Round, arial, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:131px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #610d5b;
+	margin:0 auto;
+}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #94288f), color-stop(1, #610d5b) );
+	background:-moz-linear-gradient( center top, #94288f 5%, #610d5b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#94288f', endColorstr='#610d5b');
+	background-color:#94288f;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+
+#button_div{
+	width:100%; 
+	text-align:center;
+}
