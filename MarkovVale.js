@@ -1,5 +1,5 @@
 			var chain;
-			
+			var EOS = [".", "!", "?"];
 
 
 			/** 
@@ -23,7 +23,7 @@
 				//start = randomKey(chain).split("|");
 				//words.push(start[0]);
 				//words.push(start[1]);
-				for(var i=0; i < n; i++) {
+				while ((words.length < n) || (EOS.indexOf(words[words.length - 1])===-1)){
 					var lastTwo = words.slice(words.length-2);
 					var current = lastTwo[0] + "|" + lastTwo[1];
 					//next = randomKey(chain[current]);
@@ -31,9 +31,8 @@
 					words.push(next);
 				}
 				var text = "";
-				var openQuote = false;
-
 				var PUNCT = [",", ".", "!", "?", ":", ";"];
+				words = words.slice(5);
 				for (var l in words) {
 					nextWord = words[l];
 					if (PUNCT.indexOf(nextWord) > -1)
@@ -45,7 +44,6 @@
 
 				//return text;
 				$('#chain').html('<p>'+text+'</p>');
-				console.log("here");
 			}
 
 window.onload=$.getJSON("Chain.json", function(data) {
